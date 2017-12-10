@@ -1,0 +1,45 @@
+@import "variable";
+
+.slider {
+    width: 100%;
+    float: left;
+    .content-slider{
+	    float: left;
+	    width: 20%;
+	    position: relative;
+      .pd-slider {
+        padding: 0px 5px;
+      }
+	    .pos-slider {
+			position: absolute;
+			bottom: 0px;
+			padding: 10px;
+			.titles {
+			    padding: 5px 7px;
+			    border-radius: 3px;
+			    display: inline-block;
+			    margin-bottom: 10px;
+			}
+			.content-cate {
+				padding-top: 7px;
+			}
+			.icon-slider{
+				float: left;
+			}
+			.date{
+				float: left;
+			}
+		}
+
+	}
+	.item-slider {
+		height: 280px;
+		@extend .bg-pos;  /*kế thừa*/
+		@extend .bg-style;
+	}
+	.item-slider::before {
+		@include gradian ; /*mixin*/
+		width: 96%;
+    left: 5px;
+	}
+}

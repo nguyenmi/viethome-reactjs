@@ -1,0 +1,88 @@
+.footer {
+    float: left;
+    width:100%;
+    background: #EEEEEE;
+    padding: 20px 0px;
+    border-bottom: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    margin-top: 20px;
+    .left {
+	    float: left;
+	    width: 64%;
+	    border-right: 1px solid #cccccc;
+	    padding: 0px 29px;
+	    .tl-footer{
+		    width: 25%;
+		    float: left;
+		    .text-foot{
+			    padding-top: 12px;
+			    text-transform: none;
+			    font-weight: normal;
+			}
+		}
+	}
+	.bottom {
+		float: left;
+		width: 100%;
+	}
+	.right {
+	    float: right;
+	    width: 27%;
+	    padding: 0px 22px;
+	    .title-right {
+		    text-transform: uppercase;
+		    text-align: center;
+		}
+		.text {
+			padding-bottom: 12px;
+			.font {
+			    font-size: 16px;
+			    font-weight: bolder;
+			    padding-top: 7px;
+			    .btn-icon {
+				    font-size: 20px;
+				    padding: 4px 8px;
+				}
+				.btn-icons {
+				    font-size: 27px;
+				    padding: 0px 9px;
+				}
+			}
+		}
+		.scroll-foot {
+			text-align: center;
+			.scroll {
+			    border: 1px solid #cccccc;
+			    border-radius: 10px;
+			    background: white;
+			    display: inline-block;
+			    cursor: pointer;
+			    padding: 5px 10px 5px 10px;
+			}
+		}
+		.adver-foot {
+		    margin-top: 15px;
+		    @extend .bg-style;
+		}
+	}
+}
+.footer-bottom {
+    float: left;
+    width: 98%;
+    padding: 0px 9px;
+    .logo {
+    	float: left;
+		@extend .bg-style;
+		width: 161px;
+		margin: 14px 0px;
+    }
+    .text_1 {
+	    float: left;
+	    padding: 21px 22px;
+	    color: #cccccc;
+	}
+	.text_2 {
+	    float: right;
+	    padding-top: 30px;
+	}
+}

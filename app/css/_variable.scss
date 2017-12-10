@@ -1,0 +1,112 @@
+@mixin gradian ($color1:rgba(10, 10, 10, 0), $color2:#000000, $color3:#000000  ) {
+	background: -moz-linear-gradient(top, rgba(10, 10, 10, 0) 0%,#000000 98%,#000000 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(10, 10, 10, 0) 0%,#000000 98%,#000000 100%);  /*Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(top, rgba(10, 10, 10, 0) 0%,#000000 98%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99.5%;
+    height: 50%;
+}
+.img-article {
+    max-width: 100%;
+    opacity: 0;
+}
+.bg-pos {
+	background-size: cover;
+	background-position: center;
+}
+.fontU { text-transform: uppercase; }
+.fs13 { font-size: 13px; }
+.fs14 { font-size: 14px; }
+.fs15 { font-size: 15px; }
+.fs16 { font-size: 16px; }
+.fs17 { font-size: 17px; }
+.mgt30 {margin-top: 30px;}
+.mgt20 {margin-top: 20px;}
+.colordate {color: #AAAAAA;}
+.pdr5 {padding-right: 5px;}
+.bgB{background: #6699ff;}
+.bgB:hover {
+	background:#2f5aa9;
+}
+.bgG{background: #66cc33;}
+.bgG:hover {
+	background: #4ab117;
+}
+.bgbr{background: #ff9933}
+.bgbr:hover{
+	background: #e4780c;
+}
+.bgth {background: #ff3366;}
+.bgth:hover {
+	background: #ec1047;
+}
+.pdt20 {padding-top: 30px;}
+.mgt10{margin-top: 7px;}
+.colorW {color: #e4e4e4}
+.colorW:hover {
+	color: #ffffff;
+}
+.fontW {font-weight: bolder;}
+.color-red {color: #ff3333; font-size: 15px;}
+.hv-red {color: #ff3333; font-size: 15px;}
+.hv-red:hover {
+	background: #ff3333;
+	color: #ffffff;
+}
+.color-blue {color: #336699 ; font-size: 15px;}
+.hv-blue {color: #336699 ; font-size: 15px;}
+.hv-blue:hover {
+	background: #336699;
+	color: #ffffff;
+	transition: all .5s ease;
+}
+.color-sky {color: #33ccff; font-size: 15px;}
+.hv-sky {color: #33ccff; font-size: 15px;}
+.hv-sky:hover {
+	background: #33ccff;
+	color: #ffffff
+}
+.color-green {color: #33cc33; font-size: 15px;}
+.color-brick {color: #ff9933; font-size: 15px;}
+.hv-brick {color: #ff9933; font-size: 15px;}
+.hv-brick:hover {
+	background: #ff9933;
+	color: #ffffff;
+}
+.color-blued {color: #6666cc; font-size: 15px;}
+.color-bluen {color: #99cc33; font-size: 15px;}
+.hv-bluen {color: #99cc33; font-size: 15px;}
+.hv-bluen:hover {
+	background: #99cc33;
+	color: #ffffff;
+}
+.color-pink { color: #ff3399; font-size: 15px;}
+.hv-pink { color: #ff3399; font-size: 15px;}
+.hv-pink:hover {
+	background: #ff3399;
+	color: #ffffff;
+}
+.txt-link {
+    color: #2b2a2a;
+}
+.txt-link:hover {
+	color: #000000;
+}
+.posBL {
+	position: absolute;
+	bottom: 10px;
+	left: 0px;
+}
+.colorBl{color: black;}
+.bg-style{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat
+}
+.pdleft5{
+	padding-left: 7px;
+}

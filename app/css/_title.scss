@@ -1,0 +1,56 @@
+@import "variable";
+.title-new {
+    width: 100%;
+    float: left;
+    .br-title {
+    	display: flex;
+	    border: 1px solid #cccccc;
+	}
+	.news-title {
+		width:8%;
+	    background: url(/img/bg_title.png) no-repeat;
+	    padding: 12px 15px 12px 10px;
+	}
+	.titleContent {
+		display:flex;
+		width: 92%;
+			white-space: nowrap;
+		text-overflow: 	ellipsis;
+		overflow: hidden;
+		.titleBody {
+			width :32%;
+		    padding: 8px 10px 8px 0px;
+		    display: flex;
+		    .text-time {
+			    font-weight: bolder;
+			    padding: 3px 0px 0px 5px;
+			    white-space: nowrap;
+		    	text-overflow: 	ellipsis;
+		    	overflow: hidden;
+		    	&::after { 
+				    content: "...";
+				}
+			}
+			.time {
+		    background: #CCCCCC;
+		    padding: 3px 7px 3px 7px;
+		    color: #fbfbfb;
+			}
+		}
+		
+	}
+}
+
+.st-pg {
+    font-size: 12px;
+	position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+	border: 1px solid #ddd;
+	cursor: pointer;
+}

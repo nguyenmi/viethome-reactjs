@@ -1,0 +1,100 @@
+.account-body{
+    background-color: #f6f5f5;
+    width: 100%;
+    float: left;
+    padding: 5px 0px;
+    .account-content {
+        display: flex;
+        float: right;
+    }
+}
+.regester{
+    padding-right: 25px;
+    .regester-body{
+        font-size: 16px;
+        .user {
+            padding:0px 5px;
+            font-size: 20px;
+           
+        }
+    }
+}
+.login {
+    padding-right: 10px;
+    .login-body{
+        font-size: 15px;
+        .lock {
+            padding:0px 5px;
+            font-size: 20px;    
+        }
+    }
+}
+.login-container {
+    clear: both;
+    padding: 100px 0px;
+}
+.login-content{
+    clear: both;
+    width: 40%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 3px;
+    background: #ffffff;
+    border-top: 3px solid #d2d6de;
+    box-shadow: 0 1px 1px #6a6666;
+    border-top-color: #00c0ef;
+}
+.box-header {
+    color: #444;
+    display: block;
+    padding: 10px;
+    position: relative;
+    border-bottom: 1px solid #cdc3c3;
+    .box-title{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+.form-email {
+  display: flex;
+  width: 100%;
+  .form-body {
+      margin: 0 auto;
+      padding: 15px 30px 7px 30px;
+      width: 100%;
+      .ip-email {
+          padding: 7px 0px;
+          width: 100%;
+      }
+  }
+}
+
+.box-footer {
+    width: 100%;
+}
+.box-content {
+    padding: 10px 25px;
+    .btn-cancel {
+        width: 50%;
+        padding: 5px;
+        background: #d4d4d4;
+        font-size: 17px;
+        font-weight: bolder;
+        cursor: pointer;
+        &:hover {
+            background: #8c8c8c;
+        }
+    }
+    .btn-submmit {
+        width: 50%;
+        padding: 5px;
+        background: #00c0ef;
+        color: #FFFFFF;
+        font-size: 17px;
+        font-weight: bolder;
+        cursor: pointer;
+        &:hover {
+            background: #00acd6;
+        }
+    }
+}
