@@ -22,7 +22,6 @@ class IndexDetailNews extends React.Component{
         this.setState({
           contentnews: response.data
         },() => {
-          console.log(this.state.contentnews);
           this.getView(this.state.contentnews.view)
         });
       }
@@ -49,7 +48,6 @@ class IndexDetailNews extends React.Component{
   render(){
     return (
       <div className="content-detail">
-        
         <div key={this.state.contentnews.id}>
           <h1 className="title-cates">
             <a className="txt-link" href="#">{this.state.contentnews.title}</a>

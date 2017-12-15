@@ -11,7 +11,7 @@ class NewUpadate extends React.Component{
     };
   }
   componentDidMount() {
-    axios.get('http://49.156.53.36:3000/api/posts?filter={"where": {"categoryId":"59dc632c67b5108650292afb"}, "limit" : 5}')
+    axios.get('http://49.156.53.36:3000/api/posts?filter={"limit" : 6, "order": "startDate DESC"}')
     .then(response => {
   		if (response) {
   			this.setState({

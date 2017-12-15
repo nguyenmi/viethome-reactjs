@@ -63,13 +63,6 @@ class CreatePost extends React.Component{
       });
       return false;
     }
-    else if (this.state.view === '') {
-      this.setState({
-        msg: 'bạn chưa nhập view',
-        type: 'view'
-      });
-      return false;
-    }
     else if (this.state.body === '') {
       this.setState({
         msg: 'bạn chưa nhập body',
@@ -81,8 +74,9 @@ class CreatePost extends React.Component{
       return true;
     }
   }
-  createPost(e) {
+  createPost(e, view) {
     e.preventDefault();
+    let number = view ? view : 0;
     if (this.validate()) {
       axios({
         method: 'post',
@@ -91,7 +85,7 @@ class CreatePost extends React.Component{
           title: this.state.title,
           image: this.state.image,
           startDate: this.state.startDate,
-          view: parseInt(this.state.view),
+          view: parseInt(number),
           body: this.state.body,
           categoryId: this.state.categoryId
         }
@@ -154,18 +148,14 @@ class CreatePost extends React.Component{
                   </select>
                 </div>
                 <div className="date-group">
-                  <label className="title-edit date">Date :</label>
-                  <DatePicker name="startDate" className="text-create" selected={this.state.startDate} value={this.state.startDate} onChange={this.handleChange}/>
-                </div>
-                <div className="view-group">
-                  <label className="title-edit date">view :</label>
-                  <input className="text-create" type="text" name="view" placeholder="0" value={this.state.view} onChange={this.onChange.bind(this)}/>
+                  <label className="stdate">Date :</label>
+                  <DatePicker name="startDate" className="text-create rp-date" selected={this.state.startDate} value={this.state.startDate} onChange={this.handleChange}/>
                 </div>
               </div>
             </div>
             <div className="form-group">
               <label className="title-edit">Body :</label>
-              <textarea className="text-body pd-create" name="body" rows="10" cols="80" placeholder="Nhập vào nội dung bài viết" value={this.state.body} onChange={this.onChange.bind(this)}></textarea>
+              <textarea className="text-body pd-create " name="body" rows="10" cols="80" placeholder="Nhập vào nội dung bài viết" value={this.state.body} onChange={this.onChange.bind(this)}></textarea>
             </div>
             <div className="box-pagination">
   						<button className="btn-all btn-create">Create</button>

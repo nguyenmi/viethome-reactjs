@@ -21,7 +21,7 @@ class IndexNewUpdate extends React.Component{
                 <a className="txt-link" href={`/#/detailnews/${item.id}`}>{item.title}</a>
               </h4>
               <p className="colordate fs14">
-                <i className="fa fa-calendar-o" aria-hidden="true"></i> {item.startDate} |
+                <i className="fa fa-calendar-o" aria-hidden="true"></i> {item.startDate}
                 <i className="fa fa-comments-o" aria-hidden="true"></i> {item.view}
               </p>
             </div>

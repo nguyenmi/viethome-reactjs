@@ -102,7 +102,7 @@ class ContentHome extends React.Component{
 		});
 	}
 	getShowbiz(){
-		axios.get('http://49.156.53.36:3000/api/posts?filter={"where": {"categoryId":"59daed8c67b5108650292aed"}, "limit":1, "order": "startDate DESC"}')
+		axios.get('http://49.156.53.36:3000/api/posts?filter={"where": {"categoryId":"5a33579c67b5108650292ba2"}, "limit":1, "order": "startDate DESC"}')
 		.then(response => {
 			if (response) {
 				this.setState({

@@ -350,10 +350,7 @@ li.active > a {
   line-height: 1.42857143;
   color: #333;
 }
-.pd-create {
-	padding: 0px 10px;
-	font-size: 16px;
-}
+
 .text-create{
   display: block;
   width: 100%;
@@ -364,6 +361,7 @@ li.active > a {
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
+	padding: 0px 10px;
 }
 .btn-create {
   margin-right: 16px;
@@ -373,13 +371,14 @@ li.active > a {
   display: flex;
 }
 .cate-group {
-  width: 30%;
+  width: 40%;
 }
 .date-group {
-  width: 40%;
+  width: 60%;
   display: flex;
 }
 .text-select {
+	padding: 6px 10px;
   display: block;
   width: 100%;
   height: 34px;
@@ -390,15 +389,24 @@ li.active > a {
   background-image: none;
   border: 1px solid #ccc;
 }
-.view-group {
-  width: 30%;
-  display: flex;
-}
-.date {
-  width: 30%;
+.stdate {
+	width: 13%;
+	padding: 7px 0px 7px 170px;
+	font-size: 16px;
+  font-weight: 600;
+  line-height: 1.42857143;
+  color: #333;
 }
 .text-body {
-  width: 100%;
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
 }
 .msg {
 	color: #ea5e27;
@@ -548,4 +556,26 @@ li.active > a {
 .text-you {
 	padding: 7px 17px;
   font-size: 14px;
+}
+@media screen and (max-width: 1024px){
+	.stdate {
+    width: 18%;
+    padding: 7px 0px 7px 41px;
+  }
+	.title-edit {
+  	width: 16%;
+	}
+}
+@media screen and (max-width: 768px){
+	.stdate {
+		width: 28%;
+		padding: 7px 0px 7px 4px;
+	}
+	.rp-date {
+		width: 86%;
+	}
+	.title-edit {
+		width: 19%;
+		font-size: 14px;
+	}
 }

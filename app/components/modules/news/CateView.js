@@ -69,7 +69,9 @@ class CateView extends React.Component{
                     </h4>
                     <div className="colordate">
                         <i className="fa fa-calendar-o icon-slider pdr5" aria-hidden="true"></i>
-                        <p className="pdr5 wdate">{item.startDate}</p>
+                        <p className="pdr5 wdate">{item.startDate}</p> |
+                        <i className="fa fa-comments-o pdleft5" aria-hidden="true"></i>
+                        <p className="pdleft5">{item.view}</p>
                     </div>
                 </div>
             </div>
